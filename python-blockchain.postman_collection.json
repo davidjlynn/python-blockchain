@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "python-blockchain",
+		"_postman_id": "f9f6b0d7-af81-e99a-8fe5-3e457c1828c8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mine",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions New",
+			"request": {
+				"url": "http://localhost:5000/transactions/new",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"sender\": \"d4ee26eee15148ee92c6cd394edd974e\",\n \"recipient\": \"someone-other-address\",\n \"amount\": 5\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chain",
+			"request": {
+				"url": "http://localhost:5000/chain",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
