@@ -8,9 +8,9 @@
 	},
 	"item": [
 		{
-			"name": "Mine",
+			"name": "Mine 5000",
 			"request": {
-				"url": "",
+				"url": "http://localhost:5000/mine",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -19,7 +19,18 @@
 			"response": []
 		},
 		{
-			"name": "Transactions New",
+			"name": "Mine 5001",
+			"request": {
+				"url": "http://localhost:5001/mine",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions New 5000",
 			"request": {
 				"url": "http://localhost:5000/transactions/new",
 				"method": "POST",
@@ -39,9 +50,51 @@
 			"response": []
 		},
 		{
-			"name": "Chain",
+			"name": "Chain 5000",
 			"request": {
 				"url": "http://localhost:5000/chain",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chain 5001",
+			"request": {
+				"url": "http://localhost:5001/chain",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register 5000",
+			"request": {
+				"url": "http://localhost:5000/nodes/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nodes\": [\"http://127.0.0.1:5001\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Resolve 5000",
+			"request": {
+				"url": "http://localhost:5000/nodes/resolve",
 				"method": "GET",
 				"header": [],
 				"body": {},
